@@ -48,6 +48,6 @@ python src/main.py --model_name LightGCN --dataset Grocery_and_Gourmet_Food --lr
 实验运行结束后，日志文件保存在 `log/` 目录下。
 可视化结果图表将生成在项目根目录，例如：`homework_result_Grocery_and_Gourmet_Food.png`。
 
-## 引用与致谢
+## 代码参考
 
 本项目基于清华大学 [ReChorus](https://github.com/THUwangcy/ReChorus) 框架开发。
