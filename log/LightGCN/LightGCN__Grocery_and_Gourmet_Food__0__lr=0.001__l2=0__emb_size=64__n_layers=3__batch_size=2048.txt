@@ -1,0 +1,266 @@
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:10:06 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:19:47 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:27:46 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:30:30 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:LightGCN(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.FloatTensor of size 8714x64]
+        (user_emb): Parameter containing: [torch.FloatTensor of size 14682x64]
+    )
+  )
+)
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 22:56:35 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 5                   
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:LightGCN(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.FloatTensor of size 8714x64]
+        (user_emb): Parameter containing: [torch.FloatTensor of size 14682x64]
+    )
+  )
+)
+INFO:root:Test Before Training: (HR@5:0.0003,NDCG@5:0.0002,HR@10:0.0008,NDCG@10:0.0004,HR@20:0.0019,NDCG@20:0.0007,HR@50:0.0047,NDCG@50:0.0012)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.6784 [24.1 s]	dev=(HR@5:0.0108,NDCG@5:0.0067) [31.5 s] *
+INFO:root:Epoch 2     loss=0.5748 [25.5 s]	dev=(HR@5:0.0114,NDCG@5:0.0068) [32.4 s] *
+INFO:root:Epoch 3     loss=0.4821 [23.7 s]	dev=(HR@5:0.0137,NDCG@5:0.0081) [31.5 s] *
+INFO:root:Epoch 4     loss=0.4387 [22.9 s]	dev=(HR@5:0.0155,NDCG@5:0.0095) [30.0 s] *
+INFO:root:Epoch 5     loss=0.4122 [22.6 s]	dev=(HR@5:0.0173,NDCG@5:0.0110) [30.7 s] *
+INFO:root:
+Best Iter(dev)=    5	 dev=(HR@5:0.0173,NDCG@5:0.0110) [275.3 s] 
+INFO:root:Load model from ../model/LightGCN/LightGCN__Grocery_and_Gourmet_Food__0__lr=0.001__l2=0__emb_size=64__n_layers=3__batch_size=2048.pt
+INFO:root:
+Dev  After Training: (HR@5:0.0173,NDCG@5:0.0110,HR@10:0.0300,NDCG@10:0.0151,HR@20:0.0483,NDCG@20:0.0196,HR@50:0.0880,NDCG@50:0.0275)
+INFO:root:
+Test After Training: (HR@5:0.0127,NDCG@5:0.0084,HR@10:0.0224,NDCG@10:0.0114,HR@20:0.0374,NDCG@20:0.0152,HR@50:0.0646,NDCG@50:0.0205)
+INFO:root:Saving top-100 recommendation results to: ../log/LightGCN\LightGCN__Grocery_and_Gourmet_Food__0__lr=0\rec-LightGCN-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/LightGCN\LightGCN__Grocery_and_Gourmet_Food__0__lr=0\rec-LightGCN-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-30 23:05:04 ---------------------------------------------
+INFO:root:Namespace(model_mode='', model_name='LightGCN')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-31 00:46:25 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 30                  
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:LightGCN(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.FloatTensor of size 8714x64]
+        (user_emb): Parameter containing: [torch.FloatTensor of size 14682x64]
+    )
+  )
+)
+INFO:root:Test Before Training: (HR@5:0.0003,NDCG@5:0.0002,HR@10:0.0008,NDCG@10:0.0004,HR@20:0.0019,NDCG@20:0.0007,HR@50:0.0047,NDCG@50:0.0012)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.6784 [16.8 s]	dev=(HR@5:0.0108,NDCG@5:0.0067) [23.3 s] *
+INFO:root:Epoch 2     loss=0.5748 [15.4 s]	dev=(HR@5:0.0114,NDCG@5:0.0068) [23.0 s] *
+INFO:root:Epoch 3     loss=0.4821 [15.2 s]	dev=(HR@5:0.0137,NDCG@5:0.0081) [22.4 s] *
+INFO:root:Epoch 4     loss=0.4387 [16.8 s]	dev=(HR@5:0.0155,NDCG@5:0.0095) [22.7 s] *
+INFO:root:Epoch 5     loss=0.4122 [15.4 s]	dev=(HR@5:0.0173,NDCG@5:0.0110) [22.0 s] *
+INFO:root:Epoch 6     loss=0.3914 [15.4 s]	dev=(HR@5:0.0185,NDCG@5:0.0120) [23.0 s] *
+INFO:root:Epoch 7     loss=0.3729 [15.2 s]	dev=(HR@5:0.0190,NDCG@5:0.0123) [23.5 s] *
+INFO:root:Epoch 8     loss=0.3560 [16.8 s]	dev=(HR@5:0.0200,NDCG@5:0.0130) [22.9 s] *
+INFO:root:Epoch 9     loss=0.3395 [16.3 s]	dev=(HR@5:0.0210,NDCG@5:0.0134) [22.9 s] *
+INFO:root:Epoch 10    loss=0.3254 [15.2 s]	dev=(HR@5:0.0222,NDCG@5:0.0141) [22.1 s] *
+INFO:root:Epoch 11    loss=0.3113 [15.6 s]	dev=(HR@5:0.0230,NDCG@5:0.0145) [21.7 s] *
+INFO:root:Epoch 12    loss=0.2978 [15.3 s]	dev=(HR@5:0.0237,NDCG@5:0.0149) [21.8 s] *
+INFO:root:Epoch 13    loss=0.2875 [15.2 s]	dev=(HR@5:0.0240,NDCG@5:0.0151) [21.7 s] *
+INFO:root:Epoch 14    loss=0.2783 [16.0 s]	dev=(HR@5:0.0245,NDCG@5:0.0155) [22.1 s] *
+INFO:root:Epoch 15    loss=0.2655 [15.3 s]	dev=(HR@5:0.0247,NDCG@5:0.0156) [22.6 s] *
+INFO:root:Epoch 16    loss=0.2587 [15.4 s]	dev=(HR@5:0.0252,NDCG@5:0.0160) [22.0 s] *
+INFO:root:Epoch 17    loss=0.2502 [16.7 s]	dev=(HR@5:0.0253,NDCG@5:0.0161) [23.2 s] *
+INFO:root:Epoch 18    loss=0.2460 [16.3 s]	dev=(HR@5:0.0256,NDCG@5:0.0163) [23.8 s] *
+INFO:root:Epoch 19    loss=0.2385 [16.0 s]	dev=(HR@5:0.0260,NDCG@5:0.0165) [21.8 s] *
+INFO:root:Epoch 20    loss=0.2306 [15.7 s]	dev=(HR@5:0.0263,NDCG@5:0.0166) [22.4 s] *
+INFO:root:Epoch 21    loss=0.2234 [15.2 s]	dev=(HR@5:0.0264,NDCG@5:0.0168) [21.6 s] *
+INFO:root:Epoch 22    loss=0.2189 [15.3 s]	dev=(HR@5:0.0264,NDCG@5:0.0168) [22.0 s] *
+INFO:root:Epoch 23    loss=0.2126 [15.5 s]	dev=(HR@5:0.0263,NDCG@5:0.0168) [22.0 s]
+INFO:root:Epoch 24    loss=0.2078 [15.3 s]	dev=(HR@5:0.0266,NDCG@5:0.0172) [22.1 s] *
+INFO:root:Epoch 25    loss=0.2023 [15.4 s]	dev=(HR@5:0.0270,NDCG@5:0.0172) [22.2 s] *
+INFO:root:Epoch 26    loss=0.2002 [15.3 s]	dev=(HR@5:0.0273,NDCG@5:0.0174) [23.7 s] *
+INFO:root:Epoch 27    loss=0.1955 [16.3 s]	dev=(HR@5:0.0278,NDCG@5:0.0177) [23.6 s] *
+INFO:root:Epoch 28    loss=0.1908 [16.5 s]	dev=(HR@5:0.0279,NDCG@5:0.0177) [22.4 s] *
+INFO:root:Epoch 29    loss=0.1860 [15.2 s]	dev=(HR@5:0.0278,NDCG@5:0.0178) [22.4 s] *
+INFO:root:Epoch 30    loss=0.1815 [15.4 s]	dev=(HR@5:0.0282,NDCG@5:0.0180) [22.1 s] *
+INFO:root:
+Best Iter(dev)=   30	 dev=(HR@5:0.0282,NDCG@5:0.0180) [1151.2 s] 
+INFO:root:Load model from ../model/LightGCN/LightGCN__Grocery_and_Gourmet_Food__0__lr=0.001__l2=0__emb_size=64__n_layers=3__batch_size=2048.pt
+INFO:root:
+Dev  After Training: (HR@5:0.0282,NDCG@5:0.0180,HR@10:0.0498,NDCG@10:0.0250,HR@20:0.0813,NDCG@20:0.0329,HR@50:0.1458,NDCG@50:0.0456)
+INFO:root:
+Test After Training: (HR@5:0.0207,NDCG@5:0.0128,HR@10:0.0388,NDCG@10:0.0187,HR@20:0.0629,NDCG@20:0.0247,HR@50:0.1079,NDCG@50:0.0336)
+INFO:root:Saving top-100 recommendation results to: ../log/LightGCN\LightGCN__Grocery_and_Gourmet_Food__0__lr=0\rec-LightGCN-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/LightGCN\LightGCN__Grocery_and_Gourmet_Food__0__lr=0\rec-LightGCN-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-31 01:10:45 ---------------------------------------------

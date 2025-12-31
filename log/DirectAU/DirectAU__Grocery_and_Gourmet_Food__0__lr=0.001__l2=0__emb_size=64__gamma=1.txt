@@ -1,0 +1,328 @@
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:10:09 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:19:51 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:27:53 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:DirectAU(
+  (u_embeddings): Embedding(14682, 64)
+  (i_embeddings): Embedding(8714, 64)
+)
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 21:31:10 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:DirectAU(
+  (u_embeddings): Embedding(14682, 64)
+  (i_embeddings): Embedding(8714, 64)
+)
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 22:14:22 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 1024                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 20                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:DirectAU(
+  (u_embeddings): Embedding(14682, 64)
+  (i_embeddings): Embedding(8714, 64)
+)
+INFO:root:Test Before Training: (HR@5:0.0007,NDCG@5:0.0004,HR@10:0.0013,NDCG@10:0.0006,HR@20:0.0026,NDCG@20:0.0009,HR@50:0.0063,NDCG@50:0.0017)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=-1.8707 [23.2 s]	dev=(HR@5:0.0014,NDCG@5:0.0010) [26.8 s] *
+INFO:root:Epoch 2     loss=-2.3799 [22.4 s]	dev=(HR@5:0.0090,NDCG@5:0.0059) [24.7 s] *
+INFO:root:Epoch 3     loss=-2.5779 [23.0 s]	dev=(HR@5:0.0195,NDCG@5:0.0128) [24.3 s] *
+INFO:root:Epoch 4     loss=-2.6651 [23.2 s]	dev=(HR@5:0.0251,NDCG@5:0.0166) [25.0 s] *
+INFO:root:Epoch 5     loss=-2.7149 [22.1 s]	dev=(HR@5:0.0299,NDCG@5:0.0201) [24.9 s] *
+INFO:root:Epoch 6     loss=-2.7464 [21.8 s]	dev=(HR@5:0.0315,NDCG@5:0.0215) [26.7 s] *
+INFO:root:Epoch 7     loss=-2.7700 [23.0 s]	dev=(HR@5:0.0347,NDCG@5:0.0235) [24.7 s] *
+INFO:root:Epoch 8     loss=-2.7860 [22.7 s]	dev=(HR@5:0.0366,NDCG@5:0.0249) [24.5 s] *
+INFO:root:Epoch 9     loss=-2.7984 [22.9 s]	dev=(HR@5:0.0377,NDCG@5:0.0254) [24.7 s] *
+INFO:root:Epoch 10    loss=-2.8094 [22.4 s]	dev=(HR@5:0.0383,NDCG@5:0.0256) [25.8 s] *
+INFO:root:Epoch 11    loss=-2.8191 [21.8 s]	dev=(HR@5:0.0412,NDCG@5:0.0273) [25.5 s] *
+INFO:root:Epoch 12    loss=-2.8249 [22.6 s]	dev=(HR@5:0.0413,NDCG@5:0.0273) [24.2 s]
+INFO:root:Epoch 13    loss=-2.8332 [22.7 s]	dev=(HR@5:0.0408,NDCG@5:0.0274) [24.7 s] *
+INFO:root:Epoch 14    loss=-2.8373 [23.3 s]	dev=(HR@5:0.0413,NDCG@5:0.0274) [24.9 s] *
+INFO:root:Epoch 15    loss=-2.8429 [21.8 s]	dev=(HR@5:0.0406,NDCG@5:0.0271) [24.5 s]
+INFO:root:Epoch 16    loss=-2.8469 [21.6 s]	dev=(HR@5:0.0407,NDCG@5:0.0272) [25.2 s]
+INFO:root:Epoch 17    loss=-2.8501 [22.9 s]	dev=(HR@5:0.0413,NDCG@5:0.0275) [24.8 s] *
+INFO:root:Epoch 18    loss=-2.8537 [23.4 s]	dev=(HR@5:0.0414,NDCG@5:0.0274) [25.7 s]
+INFO:root:Epoch 19    loss=-2.8558 [22.6 s]	dev=(HR@5:0.0411,NDCG@5:0.0271) [25.2 s]
+INFO:root:Epoch 20    loss=-2.8591 [22.0 s]	dev=(HR@5:0.0411,NDCG@5:0.0275) [24.5 s] *
+INFO:root:
+Best Iter(dev)=   20	 dev=(HR@5:0.0411,NDCG@5:0.0275) [955.1 s] 
+INFO:root:Load model from ../model/DirectAU/DirectAU__Grocery_and_Gourmet_Food__0__lr=0.001__l2=0__emb_size=64__gamma=1.pt
+INFO:root:
+Dev  After Training: (HR@5:0.0411,NDCG@5:0.0275,HR@10:0.0611,NDCG@10:0.0340,HR@20:0.0894,NDCG@20:0.0412,HR@50:0.1379,NDCG@50:0.0507)
+INFO:root:
+Test After Training: (HR@5:0.0232,NDCG@5:0.0149,HR@10:0.0368,NDCG@10:0.0192,HR@20:0.0567,NDCG@20:0.0242,HR@50:0.0926,NDCG@50:0.0313)
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-30 22:33:43 ---------------------------------------------
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-30 23:05:07 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 5                   
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 5                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:DirectAU(
+  (u_embeddings): Embedding(14682, 64)
+  (i_embeddings): Embedding(8714, 64)
+)
+INFO:root:Test Before Training: (HR@5:0.0007,NDCG@5:0.0004,HR@10:0.0013,NDCG@10:0.0006,HR@20:0.0026,NDCG@20:0.0009,HR@50:0.0063,NDCG@50:0.0017)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=-1.8619 [27.3 s]	dev=(HR@5:0.0012,NDCG@5:0.0008) [25.0 s] *
+INFO:root:Epoch 2     loss=-2.3191 [26.8 s]	dev=(HR@5:0.0042,NDCG@5:0.0027) [24.2 s] *
+INFO:root:Epoch 3     loss=-2.5413 [27.6 s]	dev=(HR@5:0.0112,NDCG@5:0.0074) [24.2 s] *
+INFO:root:Epoch 4     loss=-2.6468 [26.5 s]	dev=(HR@5:0.0198,NDCG@5:0.0128) [24.4 s] *
+INFO:root:Epoch 5     loss=-2.7060 [26.4 s]	dev=(HR@5:0.0250,NDCG@5:0.0167) [25.5 s] *
+INFO:root:
+Best Iter(dev)=    5	 dev=(HR@5:0.0250,NDCG@5:0.0167) [258.5 s] 
+INFO:root:Load model from ../model/DirectAU/DirectAU__Grocery_and_Gourmet_Food__0__lr=0.001__l2=0__emb_size=64__gamma=1.pt
+INFO:root:
+Dev  After Training: (HR@5:0.0250,NDCG@5:0.0167,HR@10:0.0376,NDCG@10:0.0208,HR@20:0.0527,NDCG@20:0.0246,HR@50:0.0884,NDCG@50:0.0316)
+INFO:root:
+Test After Training: (HR@5:0.0133,NDCG@5:0.0088,HR@10:0.0201,NDCG@10:0.0110,HR@20:0.0340,NDCG@20:0.0145,HR@50:0.0588,NDCG@50:0.0194)
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-30 23:12:53 ---------------------------------------------
+INFO:root:Namespace(model_mode='', model_name='DirectAU')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-31 01:10:53 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 2048                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 30                  
+ eval_batch_size    | 256                 
+ gamma              | 1                   
+ gpu                | 0                   
+ l2                 | 0                   
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 1                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from ../data\Grocery_and_Gourmet_Food\BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:DirectAU(
+  (u_embeddings): Embedding(14682, 64)
+  (i_embeddings): Embedding(8714, 64)
+)
+INFO:root:Test Before Training: (HR@5:0.0007,NDCG@5:0.0004,HR@10:0.0013,NDCG@10:0.0006,HR@20:0.0026,NDCG@20:0.0009,HR@50:0.0063,NDCG@50:0.0017)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=-1.8619 [25.0 s]	dev=(HR@5:0.0012,NDCG@5:0.0008) [6.2 s] *
+INFO:root:Epoch 2     loss=-2.3191 [23.3 s]	dev=(HR@5:0.0042,NDCG@5:0.0027) [6.1 s] *
+INFO:root:Epoch 3     loss=-2.5413 [23.1 s]	dev=(HR@5:0.0112,NDCG@5:0.0074) [6.4 s] *
+INFO:root:Epoch 4     loss=-2.6468 [23.7 s]	dev=(HR@5:0.0198,NDCG@5:0.0128) [6.3 s] *
+INFO:root:Epoch 5     loss=-2.7060 [23.2 s]	dev=(HR@5:0.0250,NDCG@5:0.0167) [6.2 s] *
+INFO:root:Epoch 6     loss=-2.7438 [23.1 s]	dev=(HR@5:0.0285,NDCG@5:0.0193) [6.2 s] *
+INFO:root:Epoch 7     loss=-2.7701 [23.2 s]	dev=(HR@5:0.0304,NDCG@5:0.0205) [6.1 s] *
+INFO:root:Epoch 8     loss=-2.7894 [23.2 s]	dev=(HR@5:0.0338,NDCG@5:0.0226) [6.2 s] *
+INFO:root:Epoch 9     loss=-2.8042 [23.1 s]	dev=(HR@5:0.0358,NDCG@5:0.0240) [6.3 s] *
+INFO:root:Epoch 10    loss=-2.8158 [23.2 s]	dev=(HR@5:0.0353,NDCG@5:0.0240) [6.3 s] *
+INFO:root:Epoch 11    loss=-2.8256 [23.2 s]	dev=(HR@5:0.0383,NDCG@5:0.0256) [6.2 s] *
+INFO:root:Epoch 12    loss=-2.8335 [23.2 s]	dev=(HR@5:0.0386,NDCG@5:0.0263) [6.1 s] *
+INFO:root:Epoch 13    loss=-2.8404 [22.9 s]	dev=(HR@5:0.0391,NDCG@5:0.0260) [6.3 s]
+INFO:root:Epoch 14    loss=-2.8462 [23.1 s]	dev=(HR@5:0.0403,NDCG@5:0.0267) [6.0 s] *
+INFO:root:Epoch 15    loss=-2.8511 [23.1 s]	dev=(HR@5:0.0407,NDCG@5:0.0274) [6.1 s] *
+INFO:root:Epoch 16    loss=-2.8554 [23.1 s]	dev=(HR@5:0.0417,NDCG@5:0.0279) [6.1 s] *
+INFO:root:Epoch 17    loss=-2.8599 [22.9 s]	dev=(HR@5:0.0413,NDCG@5:0.0277) [6.2 s]
+INFO:root:Epoch 18    loss=-2.8632 [23.2 s]	dev=(HR@5:0.0426,NDCG@5:0.0284) [6.1 s] *
+INFO:root:Epoch 19    loss=-2.8666 [23.0 s]	dev=(HR@5:0.0416,NDCG@5:0.0279) [6.2 s]
+INFO:root:Epoch 20    loss=-2.8695 [23.3 s]	dev=(HR@5:0.0418,NDCG@5:0.0280) [6.1 s]
+INFO:root:Epoch 21    loss=-2.8719 [23.3 s]	dev=(HR@5:0.0420,NDCG@5:0.0280) [6.2 s]
+INFO:root:Epoch 22    loss=-2.8745 [23.1 s]	dev=(HR@5:0.0415,NDCG@5:0.0276) [6.3 s]
+INFO:root:Epoch 23    loss=-2.8768 [23.2 s]	dev=(HR@5:0.0424,NDCG@5:0.0282) [6.2 s]
+INFO:root:Epoch 24    loss=-2.8789 [23.1 s]	dev=(HR@5:0.0425,NDCG@5:0.0283) [6.0 s]
+INFO:root:Epoch 25    loss=-2.8807 [23.3 s]	dev=(HR@5:0.0428,NDCG@5:0.0286) [6.0 s] *
+INFO:root:Epoch 26    loss=-2.8823 [23.0 s]	dev=(HR@5:0.0434,NDCG@5:0.0288) [6.2 s] *
+INFO:root:Epoch 27    loss=-2.8843 [23.1 s]	dev=(HR@5:0.0426,NDCG@5:0.0283) [6.1 s]
+INFO:root:Epoch 28    loss=-2.8855 [23.1 s]	dev=(HR@5:0.0429,NDCG@5:0.0285) [6.0 s]
+INFO:root:Epoch 29    loss=-2.8873 [23.2 s]	dev=(HR@5:0.0436,NDCG@5:0.0290) [6.1 s] *
+INFO:root:Epoch 30    loss=-2.8884 [23.0 s]	dev=(HR@5:0.0428,NDCG@5:0.0285) [6.0 s]
+INFO:root:
+Best Iter(dev)=   29	 dev=(HR@5:0.0436,NDCG@5:0.0290) [884.0 s] 
+INFO:root:Load model from ../model/DirectAU/DirectAU__Grocery_and_Gourmet_Food__0__lr=0.001__l2=0__emb_size=64__gamma=1.pt
+INFO:root:
+Dev  After Training: (HR@5:0.0436,NDCG@5:0.0290,HR@10:0.0630,NDCG@10:0.0352,HR@20:0.0912,NDCG@20:0.0423,HR@50:0.1414,NDCG@50:0.0522)
+INFO:root:
+Test After Training: (HR@5:0.0235,NDCG@5:0.0150,HR@10:0.0386,NDCG@10:0.0199,HR@20:0.0569,NDCG@20:0.0245,HR@50:0.0952,NDCG@50:0.0321)
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/DirectAU\DirectAU__Grocery_and_Gourmet_Food__0__lr=0\rec-DirectAU-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-31 01:29:04 ---------------------------------------------
